@@ -63,3 +63,18 @@ $().ready(function () {
         }
     });
 });
+
+$(function() {
+    $("#submitform").click(function() {     
+      if($('input[type=radio][name=gender]:checked').length == 0)
+      {
+         alert("Please select atleast one");
+         return false;
+      }
+      else
+      {
+          alert("radio button selected value: ");
+      }      
+    });
+});
+
